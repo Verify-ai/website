@@ -1,6 +1,6 @@
 # AI Agent Landing Page
 
-![Demo](/screenshot.jpeg)
+![Demo](public/screenshot.jpeg)
 
 A modern, production-ready landing page template for AI and SaaS products. Built with Astro and Tailwind CSS.
 
