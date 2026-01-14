@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VerifyAI — Formal verification with custom compilers & LLMs</title>
+    <meta name="description" content="VerifyAI builds custom compilers and LLM-driven pipelines to formally verify code and ensure provable correctness." />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="icon" href="/assets/logo.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="/assets/logo.svg" alt="VerifyAI logo" class="logo" />
+          <h1 class="company">VerifyAI</h1>
+        </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h2>Formal verification powered by custom compilers and LLMs</h2>
+      <p class="lede">We design custom compilers and combine them with LLM-driven proof assistants to formally verify critical software—reducing bugs, eliminating undefined behaviour, and creating provable guarantees for production systems.</p>
+      <p class="meta">Suitable for safety-critical systems, financial contracts, crypto primitives, and any code that must be correct by construction.</p>
+      <p>
+        <a href="#contact" class="button">Talk to our engineers</a>
+        <a href="#approach" class="button ghost">How it works</a>
+      </p>
+    </div>
+    <div class="hero-card">
+      <h3>What we deliver</h3>
+      <ul>
+        <li>Custom compiler toolchains that emit verifiable IR</li>
+        <li>LLM-augmented proof generation and verification</li>
+        <li>Formal specs, proofs, and reproducible verification pipelines</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="centered">
+<h2>Services</h2>
+<h3>Compiler engineering</h3>
+<p>We build custom compilers that preserve semantics and emit verification-friendly IR for downstream proof tools.</p>
+<h3>LLM-powered proofs</h3>
+<p>We harness large language models as assistants to generate and structure proofs, backed by automatic proof checking.</p>
+<h3>Verification pipelines</h3>
+<p>From specification to reproducible CI: we deliver pipelines that integrate with your workflow and provide guardrails for ongoing changes.</p>
+<h2>Our approach</h2>
+<ol>
+  <li>Capture a precise formal specification for your system.</li>
+  <li>Design/modify a compiler that preserves the spec into verifiable IR.</li>
+  <li>Use LLMs to propose proof steps, then discharge them with automated proof-checkers.</li>
+  <li>Integrate results into CI so proofs stay green as code evolves.</li>
+</ol>
+<h2>About VerifyAI</h2>
+<p>VerifyAI brings together compiler theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We specialize in crafting toolchains and workflows that deliver provable guarantees without slowing product velocity.</p>
+<h2>Contact</h2>
+<p>Interested in a pilot or technical discussion? Email us at <a href="mailto:hello@verify.ai">hello@verify.ai</a>.</p>
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> VerifyAI — Formal verification with compilers &amp; LLMs</p>
+        <p class="small">Built for demonstration. Deploy on GitHub Pages from this repo.</p>
+      </div>
+    </footer>
+
+    <script>
+      // set year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

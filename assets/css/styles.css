@@ -1,0 +1,87 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --white:#e6eef6;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg),#071022);
+  color:var(--white);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1080px;margin:0 auto;padding:2rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:0.75rem;align-items:center}
+.logo{width:48px;height:48px}
+.company{font-size:1.15rem;margin:0}
+.nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.nav a.cta{background:var(--accent);color:#042016;padding:0.5rem 0.75rem;border-radius:8px;margin-left:1rem}
+
+.hero{padding:3rem 0}
+.hero-inner{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:start}
+.hero-copy h2{font-size:2rem;margin:0 0 0.5rem}
+.lede{color:var(--white);opacity:0.95;line-height:1.5}
+.meta{color:var(--muted);margin-top:0.5rem}
+.button{display:inline-block;padding:0.65rem 1rem;border-radius:8px;background:var(--accent);color:#042016;text-decoration:none;margin-right:0.5rem}
+.button.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+
+.hero-card{background:var(--card);padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+.hero-card h3{margin-top:0}
+.hero-card ul{padding-left:1.1rem;color:var(--muted)}
+
+.split{padding:2.5rem 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:var(--glass);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin-top:0}
+
+.approach{padding:2.5rem 0}
+.approach ol{color:var(--muted)}
+
+.about{padding:2.5rem 0}
+
+.contact{padding:2.5rem 0}
+
+.site-footer{border-top:1px solid rgba(255,255,255,0.02);padding:1.5rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.small{color:var(--muted);font-size:0.9rem}
+
+@media (max-width:840px){
+  .hero-inner{grid-template-columns:1fr;}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:1rem}
+  .nav{display:flex;gap:0.5rem}
+  .footer-inner{flex-direction:column;gap:0.5rem;text-align:center}
+}
+
+/* Centered block utility used for Services/Approach/About/Contact */
+.centered{
+  text-align: center;
+}
+.centered .cards{
+  justify-content: center; /* center the grid of cards */
+}
+.centered .cards .card{
+  text-align: left; /* keep card text left-aligned for readability */
+  max-width: 400px;
+}
+.centered .approach ol,
+.centered ol{
+  display: inline-block; /* center the ordered list */
+  text-align: left;
+  margin: 0.5rem auto 1rem;
+}
+.centered .about,
+.centered .contact{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (max-width:840px){
+  .centered .cards .card{max-width:none}
+  .centered .approach ol{width:100%}
+}
