@@ -1,57 +1,70 @@
-# AI Agent Landing Page
+# VerifyAI — static website
 
-![Demo](public/screenshot.jpeg)
+This repository contains a small static website for VerifyAI, a company that uses custom compilers and LLMs to formally verify code.
 
-A modern, production-ready landing page template for AI and SaaS products. Built with Astro and Tailwind CSS.
+Files created
+- `index.html` — main site page
+- `styles.css` — site styles
+- `assets/logo.svg` — simple svg logo
+- `.nojekyll` — prevent GitHub Pages from running Jekyll
 
-## Features
+Now converted to an Eleventy (Markdown-driven) site. New structure:
 
-- ⚡️ **Astro 5** - Fast, static site generation
-- 🎨 **Tailwind CSS 4** - Modern styling with CSS-first config
-- 📱 **Fully Responsive** - Mobile-first design
-- ♿ **Accessible** - Semantic HTML & ARIA compliant
-- 🎭 **Smooth Animations** - Scroll-triggered effects
-- 🎯 **SEO Ready** - Meta tags & Open Graph
-- 🧩 **Modular Components** - Easy to customize
+- `package.json` — npm scripts and Eleventy dependency
+- `src/` — markdown and Eleventy templates
+- `assets/` — images and css (copied through to the built site)
+- `_site/` — (generated) output directory created by Eleventy
+- `.github/workflows/gh-pages.yml` — GitHub Actions workflow that builds and deploys to `gh-pages`
 
-## Sections
+Preview locally
 
-- Hero with stats
-- Features grid (9 cards)
-- How it works (4 steps)
-- Testimonials (6 with company logos)
-- Pricing tiers (3 plans)
-- FAQ accordion (6 questions)
-- Contact form
-- Footer
+Option A — develop locally using Eleventy (recommended):
 
-## Quick Start
+1. Install dependencies and run Eleventy:
 
 ```bash
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
+cd website
+npm ci
+npm start
+# then open http://localhost:8080 (Eleventy will log the local server URL)
 ```
 
-## Customization
+Option B — quick static preview using Python (for already-built site):
 
-Edit content in:
+```bash
+# build first
+npm run build
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-- `src/config.ts` - Site configuration
-- `src/content/*.ts` - Features, testimonials, FAQ
-- `src/styles/globals.css` - Colors & animations
+Deploy to GitHub Pages
 
-## Deploy
+Option A — GitHub Pages (recommended, simple):
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new)
+1. Push this repository to GitHub.
+2. In your repository settings > Pages, set the source to branch `main` and folder `/ (root)`.
+3. Save. GitHub will publish the site at `https://<your-org-or-username>.github.io/<repo>/`.
 
-Works on Replit, Vercel, Netlify, and GitHub Pages.
+Option B — GitHub Actions (automated deploy to `gh-pages`):
 
-## License
+If you'd like, I can add a GitHub Actions workflow to build and deploy automatically to the `gh-pages` branch.
 
-[MIT](LICENSE)
+Note: I've already added a workflow at `.github/workflows/gh-pages.yml`. It runs on pushes to `main`, installs Node, runs `npm run build`, then publishes the generated `_site/` folder to the `gh-pages` branch with the provided `GITHUB_TOKEN`.
+
+Contract (what this site provides)
+
+- Inputs: plain HTML/CSS files in repo root.
+- Output: static website ready for GitHub Pages.
+- Error modes: none — purely static. If images or files are missing, the browser will show broken links.
+
+Edge cases & notes
+
+- This is a minimal, easily extensible starting point. If you want a React/Vite site, or content in Markdown, tell me and I will scaffold it.
+- If you want a contact form instead of a mailto link, we'll need a backend or a form provider (Formspree, Netlify Forms, etc.).
+
+Next steps I can take for you
+
+- Add a GitHub Actions workflow to publish automatically.
+- Convert the site to a Markdown-driven static site (eleventy, Hugo, or Next.js) for easier content editing.
+- Add analytics, a blog, or case-study pages.
