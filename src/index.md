@@ -29,14 +29,31 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
 
 ## Services
 
-### Compiler engineering
-We build custom compilers that preserve semantics and emit verification-friendly IR for downstream proof tools.
+<div class="cards feature-cards">
+  <article class="card">
+    <div class="card-icon">
+      <img src="/assets/icons/compiler.svg" alt="compiler icon" />
+    </div>
+    <h3>Compiler engineering</h3>
+    <p>We design custom compiler toolchains that preserve semantics and emit verification-friendly intermediate representations, making formal proofs tractable and repeatable.</p>
+  </article>
 
-### LLM-powered proofs
-We harness large language models as assistants to generate and structure proofs, backed by automatic proof checking.
+  <article class="card">
+    <div class="card-icon">
+      <img src="/assets/icons/llm.svg" alt="llm icon" />
+    </div>
+    <h3>LLM-powered proofs</h3>
+    <p>We augment classical proof tooling with LLM-assisted proof synthesis and step suggestion, then discharge results with automated proof-checkers to ensure correctness.</p>
+  </article>
 
-### Verification pipelines
-From specification to reproducible CI: we deliver pipelines that integrate with your workflow and provide guardrails for ongoing changes.
+  <article class="card">
+    <div class="card-icon">
+      <img src="/assets/icons/pipeline.svg" alt="pipeline icon" />
+    </div>
+    <h3>Verification pipelines</h3>
+    <p>From specification to CI: we deliver reproducible pipelines that integrate into your workflow and keep proofs and tests green as code evolves.</p>
+  </article>
+</div>
 
 ## Our approach
 
