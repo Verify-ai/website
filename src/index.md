@@ -75,6 +75,29 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
       </div>
       <div class="rounded-xl p-6 bg-slate-800 glass">
         <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
+          <img src="/assets/icons/specs.svg" alt="" class="w-7 h-7" />
+        </div>
+        <h3 class="font-semibold">Formal specs &amp; models</h3>
+        <p class="mt-2 text-slate-300 text-sm">We help write precise formal specifications and abstract models that make verification tractable and auditable.</p>
+      </div>
+
+      <div class="rounded-xl p-6 bg-slate-800 glass">
+        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
+          <img src="/assets/icons/automation.svg" alt="" class="w-7 h-7" />
+        </div>
+        <h3 class="font-semibold">Proof automation</h3>
+        <p class="mt-2 text-slate-300 text-sm">Automate repetitive proof obligations with tool-assisted tactics and LLM-guided strategies to speed verification.</p>
+      </div>
+
+      <div class="rounded-xl p-6 bg-slate-800 glass">
+        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
+          <img src="/assets/icons/audit.svg" alt="" class="w-7 h-7" />
+        </div>
+        <h3 class="font-semibold">Audits &amp; consulting</h3>
+        <p class="mt-2 text-slate-300 text-sm">Security and correctness audits, plus consulting to integrate formal methods into your engineering process.</p>
+      </div>
+      <div class="rounded-xl p-6 bg-slate-800 glass">
+        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
           <img src="/assets/icons/llm.svg" alt="" class="w-7 h-7" />
         </div>
         <h3 class="font-semibold">LLM-powered proofs</h3>
