@@ -49,6 +49,13 @@ body{
 .card:hover{transform:translateY(-6px)}
 .card h3{margin-top:0}
 
+/* Feature cards (Services) */
+.feature-cards{justify-items:center}
+.feature-cards .card{max-width:420px;text-align:center;padding:1.5rem}
+.card-icon{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;margin:0 auto 0.8rem;box-shadow:0 8px 20px rgba(3,10,32,0.45)}
+.card-icon img{width:44px;height:44px;display:block}
+.feature-cards .card p{color:var(--muted);margin-top:0.6rem}
+
 .approach{padding:2.5rem 0}
 .approach ol{color:var(--muted)}
 
