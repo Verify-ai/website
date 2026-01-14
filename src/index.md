@@ -3,30 +3,6 @@ layout: base.njk
 title: VerifyAI — Formal verification with custom compilers & LLMs
 ---
 
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-copy">
-      <h2>Formal verification powered by custom compilers and LLMs</h2>
-      <p class="lede">We design custom compilers and combine them with LLM-driven proof assistants to formally verify critical software—reducing bugs, eliminating undefined behaviour, and creating provable guarantees for production systems.</p>
-      <p class="meta">Suitable for safety-critical systems, financial contracts, crypto primitives, and any code that must be correct by construction.</p>
-      <p>
-        <a href="#contact" class="button">Talk to our engineers</a>
-        <a href="#approach" class="button ghost">How it works</a>
-      </p>
-    </div>
-    <div class="hero-card">
-      <h3>What we deliver</h3>
-      <ul>
-        <li>Custom compiler toolchains that emit verifiable IR</li>
-        <li>LLM-augmented proof generation and verification</li>
-        <li>Formal specs, proofs, and reproducible verification pipelines</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-</div>
-
 <!-- Tailwind marketing homepage content -->
 
 <section class="pt-12 pb-8">
@@ -140,14 +116,3 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
     <div class="mt-6"><a href="mailto:hello@verify.ai" class="inline-block bg-emerald-300 text-emerald-900 px-6 py-3 rounded-md font-semibold">Email us</a></div>
   </div>
 </section>
-</ol>
-
-## About VerifyAI
-
-VerifyAI brings together compiler theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We specialize in crafting toolchains and workflows that deliver provable guarantees without slowing product velocity.
-
-## Contact
-
-Interested in a pilot or technical discussion? Email us at [hello@verify.ai](mailto:hello@verify.ai).
-
-</div>
