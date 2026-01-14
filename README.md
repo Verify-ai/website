@@ -74,3 +74,24 @@ Vercel notes
 If you're deploying this project to Vercel and see the error "No Output Directory named 'dist' found after the Build completed", configure Vercel to use the Eleventy output directory (`_site`). I added a `vercel.json` file that configures Vercel's `@vercel/static-build` to use `_site` as the `distDir`. With this file in the repo, Vercel will run `npm run build` and deploy `_site` automatically.
 
 If you'd rather set this in the Vercel dashboard instead of using `vercel.json`, in your project settings set the Build Command to `npm run build` and the Output Directory to `_site`.
+
+Fixing the GitHub Actions 403 (permission denied) error
+
+If your Actions run fails with an error like:
+
+  remote: Permission to Verify-ai/website.git denied to github-actions[bot].
+
+Then the workflow's token doesn't have permission to push to the repository. Common fixes:
+
+1. Enable write permissions for the GITHUB_TOKEN in repository settings:
+	- Go to Settings → Actions → General → Workflow permissions.
+	- Select "Read and write permissions" and save. This allows `GITHUB_TOKEN` to push branches.
+
+2. If your repository is in an organization, ensure organization policies allow GitHub Actions to write/push. An org-level policy can block writes even when repo-level settings allow them.
+
+3. Use a Personal Access Token (PAT) as a fallback:
+	- Create a PAT (Settings → Developer settings → Personal access tokens) with `repo` scope.
+	- Add it to the repository secrets (e.g., `GH_PAGES_PAT`).
+	- Edit the workflow to pass it to the deploy action as `personal_token: ${{ secrets.GH_PAGES_PAT }}`.
+
+I updated the workflow to request `contents: write` permission. If you still see the 403, follow steps 1 or 3 above and re-run the workflow.

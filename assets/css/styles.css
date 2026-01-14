@@ -57,3 +57,31 @@ body{
   .nav{display:flex;gap:0.5rem}
   .footer-inner{flex-direction:column;gap:0.5rem;text-align:center}
 }
+
+/* Centered block utility used for Services/Approach/About/Contact */
+.centered{
+  text-align: center;
+}
+.centered .cards{
+  justify-content: center; /* center the grid of cards */
+}
+.centered .cards .card{
+  text-align: left; /* keep card text left-aligned for readability */
+  max-width: 400px;
+}
+.centered .approach ol,
+.centered ol{
+  display: inline-block; /* center the ordered list */
+  text-align: left;
+  margin: 0.5rem auto 1rem;
+}
+.centered .about,
+.centered .contact{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (max-width:840px){
+  .centered .cards .card{max-width:none}
+  .centered .approach ol{width:100%}
+}

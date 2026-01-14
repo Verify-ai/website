@@ -25,6 +25,8 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
   </div>
 </section>
 
+<div class="centered">
+
 ## Services
 
 ### Compiler engineering
@@ -38,10 +40,12 @@ From specification to reproducible CI: we deliver pipelines that integrate with 
 
 ## Our approach
 
-1. Capture a precise formal specification for your system.
-2. Design/modify a compiler that preserves the spec into verifiable IR.
-3. Use LLMs to propose proof steps, then discharge them with automated proof-checkers.
-4. Integrate results into CI so proofs stay green as code evolves.
+<ol>
+  <li>Capture a precise formal specification for your system.</li>
+  <li>Design/modify a compiler that preserves the spec into verifiable IR.</li>
+  <li>Use LLMs to propose proof steps, then discharge them with automated proof-checkers.</li>
+  <li>Integrate results into CI so proofs stay green as code evolves.</li>
+</ol>
 
 ## About VerifyAI
 
@@ -50,3 +54,5 @@ VerifyAI brings together compiler theory, formal methods, and the latest LLM tec
 ## Contact
 
 Interested in a pilot or technical discussion? Email us at [hello@verify.ai](mailto:hello@verify.ai).
+
+</div>
