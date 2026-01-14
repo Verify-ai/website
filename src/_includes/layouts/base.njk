@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title | safe }}</title>
     <meta name="description" content="VerifyAI builds custom compilers and LLM-driven pipelines to formally verify code and ensure provable correctness." />
-    <!-- Improve typography with web fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="icon" href="/assets/logo.svg" />
+    <!-- Tailwind CDN for quick marketing template -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* small visual tweaks to supplement Tailwind */
+      .gradient-bg { background: linear-gradient(90deg,#05233b 0%, #071226 100%); }
+      .glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(6px); }
+    </style>
   </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <img src="/assets/logo.svg" alt="VerifyAI logo" class="logo" />
-          <h1 class="company">VerifyAI</h1>
+  <body class="antialiased text-slate-100 bg-slate-900 gradient-bg">
+    <header class="py-6">
+      <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img src="/assets/logo.svg" alt="VerifyAI" class="w-12 h-12 rounded-md" />
+          <span class="font-semibold text-lg">VerifyAI</span>
         </div>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
-          <a href="#contact" class="cta">Contact</a>
+        <nav class="hidden md:flex items-center gap-6 text-slate-300">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#services" class="hover:text-white">Services</a>
+          <a href="#approach" class="hover:text-white">Approach</a>
+          <a href="#contact" class="bg-emerald-300 text-emerald-900 px-4 py-2 rounded-md font-semibold shadow">Contact</a>
         </nav>
       </div>
     </header>
@@ -32,16 +34,13 @@
       {{ content | safe }}
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> VerifyAI — Formal verification with compilers &amp; LLMs</p>
-        <p class="small">Built for demonstration. Deploy on GitHub Pages from this repo.</p>
+    <footer class="mt-20 py-8 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-6 text-slate-400 flex items-center justify-between">
+        <div>© <span id="year"></span> VerifyAI</div>
+        <div class="text-sm">Built for demonstration • Deploy with GitHub Pages</div>
       </div>
     </footer>
 
-    <script>
-      // set year
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>

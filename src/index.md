@@ -25,43 +25,98 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
   </div>
 </section>
 
-<div class="centered">
-
-## Services
-
-<div class="cards feature-cards">
-  <article class="card">
-    <div class="card-icon">
-      <img src="/assets/icons/compiler.svg" alt="compiler icon" />
-    </div>
-    <h3>Compiler engineering</h3>
-    <p>We design custom compiler toolchains that preserve semantics and emit verification-friendly intermediate representations, making formal proofs tractable and repeatable.</p>
-  </article>
-
-  <article class="card">
-    <div class="card-icon">
-      <img src="/assets/icons/llm.svg" alt="llm icon" />
-    </div>
-    <h3>LLM-powered proofs</h3>
-    <p>We augment classical proof tooling with LLM-assisted proof synthesis and step suggestion, then discharge results with automated proof-checkers to ensure correctness.</p>
-  </article>
-
-  <article class="card">
-    <div class="card-icon">
-      <img src="/assets/icons/pipeline.svg" alt="pipeline icon" />
-    </div>
-    <h3>Verification pipelines</h3>
-    <p>From specification to CI: we deliver reproducible pipelines that integrate into your workflow and keep proofs and tests green as code evolves.</p>
-  </article>
 </div>
 
-## Our approach
+<!-- Tailwind marketing homepage content -->
 
-<ol>
-  <li>Capture a precise formal specification for your system.</li>
-  <li>Design/modify a compiler that preserves the spec into verifiable IR.</li>
-  <li>Use LLMs to propose proof steps, then discharge them with automated proof-checkers.</li>
-  <li>Integrate results into CI so proofs stay green as code evolves.</li>
+<section class="pt-12 pb-8">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl font-extrabold tracking-tight">Formal verification with compilers &amp; LLMs</h1>
+      <p class="mt-4 text-slate-300 max-w-xl">VerifyAI builds custom compilers and LLM-augmented verification pipelines to produce provable guarantees for critical software. We make formal methods practical for real-world systems.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="#contact" class="inline-flex items-center bg-emerald-300 text-emerald-900 px-5 py-3 rounded-md font-semibold shadow">Talk to our engineers</a>
+        <a href="#approach" class="inline-flex items-center border border-slate-700 px-4 py-3 rounded-md text-slate-200">How it works</a>
+      </div>
+      <div class="mt-8 flex gap-6 text-sm text-slate-400">
+        <div>
+          <div class="text-white font-semibold">Safety-critical</div>
+          <div>Systems with provable guarantees</div>
+        </div>
+        <div>
+          <div class="text-white font-semibold">Crypto & Finance</div>
+          <div>Auditable and verifiable code</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-slate-800 rounded-2xl p-6 glass shadow-xl">
+        <h3 class="text-lg font-semibold">What we deliver</h3>
+        <ul class="mt-3 text-slate-300 space-y-2">
+          <li>Custom compiler toolchains that emit verifiable IR</li>
+          <li>LLM-augmented proof generation backed by proof-checkers</li>
+          <li>Reproducible CI pipelines for maintaining proofs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-semibold">Services</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="rounded-xl p-6 bg-slate-800 glass">
+        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
+          <img src="/assets/icons/compiler.svg" alt="" class="w-7 h-7" />
+        </div>
+        <h3 class="font-semibold">Compiler engineering</h3>
+        <p class="mt-2 text-slate-300 text-sm">We design compilers that preserve semantics and emit verification-friendly IR for downstream proof tools.</p>
+      </div>
+      <div class="rounded-xl p-6 bg-slate-800 glass">
+        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
+          <img src="/assets/icons/llm.svg" alt="" class="w-7 h-7" />
+        </div>
+        <h3 class="font-semibold">LLM-powered proofs</h3>
+        <p class="mt-2 text-slate-300 text-sm">We harness LLMs to propose and structure proofs, then discharge them with automated proof-checkers for sound results.</p>
+      </div>
+      <div class="rounded-xl p-6 bg-slate-800 glass">
+        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
+          <img src="/assets/icons/pipeline.svg" alt="" class="w-7 h-7" />
+        </div>
+        <h3 class="font-semibold">Verification pipelines</h3>
+        <p class="mt-2 text-slate-300 text-sm">From specification to CI: reproducible pipelines that integrate with your workflow and keep proofs green.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="approach" class="py-12 bg-slate-900">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-semibold">Our approach</h2>
+    <ol class="mt-6 text-left inline-block text-slate-300">
+      <li class="mb-2"><strong>1.</strong> Capture a precise formal specification for your system.</li>
+      <li class="mb-2"><strong>2.</strong> Design/modify a compiler that preserves the spec into verifiable IR.</li>
+      <li class="mb-2"><strong>3.</strong> Use LLMs to propose proof steps, then discharge them with automated proof-checkers.</li>
+      <li class="mb-2"><strong>4.</strong> Integrate results into CI so proofs stay green as code evolves.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="about" class="py-12">
+  <div class="max-w-4xl mx-auto px-6 text-center text-slate-300">
+    <h2 class="text-2xl font-semibold">About VerifyAI</h2>
+    <p class="mt-4">VerifyAI brings together compiler theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We craft toolchains and workflows that deliver provable guarantees without slowing product velocity.</p>
+  </div>
+</section>
+
+<section id="contact" class="py-12 bg-slate-900">
+  <div class="max-w-4xl mx-auto px-6 text-center text-slate-300">
+    <h2 class="text-2xl font-semibold">Contact</h2>
+    <p class="mt-4">Interested in a pilot or technical discussion? Email us at <a class="text-emerald-300" href="mailto:hello@verify.ai">hello@verify.ai</a>.</p>
+    <div class="mt-6"><a href="mailto:hello@verify.ai" class="inline-block bg-emerald-300 text-emerald-900 px-6 py-3 rounded-md font-semibold">Email us</a></div>
+  </div>
+</section>
 </ol>
 
 ## About VerifyAI
