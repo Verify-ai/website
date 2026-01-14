@@ -41,7 +41,7 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
 <section id="services" class="py-12">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-2xl font-semibold">Services</h2>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
       <div class="rounded-xl p-6 bg-slate-800 glass">
         <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
           <img src="/assets/icons/compiler.svg" alt="" class="w-7 h-7" />
@@ -56,59 +56,9 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
         <h3 class="font-semibold">Formal specs &amp; models</h3>
         <p class="mt-2 text-slate-300 text-sm">We help write precise formal specifications and abstract models that make verification tractable and auditable.</p>
       </div>
-
-      <div class="rounded-xl p-6 bg-slate-800 glass">
-        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
-          <img src="/assets/icons/automation.svg" alt="" class="w-7 h-7" />
-        </div>
-        <h3 class="font-semibold">Proof automation</h3>
-        <p class="mt-2 text-slate-300 text-sm">Automate repetitive proof obligations with tool-assisted tactics and LLM-guided strategies to speed verification.</p>
-      </div>
-
-      <div class="rounded-xl p-6 bg-slate-800 glass">
-        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
-          <img src="/assets/icons/audit.svg" alt="" class="w-7 h-7" />
-        </div>
-        <h3 class="font-semibold">Audits &amp; consulting</h3>
-        <p class="mt-2 text-slate-300 text-sm">Security and correctness audits, plus consulting to integrate formal methods into your engineering process.</p>
-      </div>
-      <div class="rounded-xl p-6 bg-slate-800 glass">
-        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
-          <img src="/assets/icons/llm.svg" alt="" class="w-7 h-7" />
-        </div>
-        <h3 class="font-semibold">LLM-powered proofs</h3>
-        <p class="mt-2 text-slate-300 text-sm">We harness LLMs to propose and structure proofs, then discharge them with automated proof-checkers for sound results.</p>
-      </div>
-      <div class="rounded-xl p-6 bg-slate-800 glass">
-        <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
-          <img src="/assets/icons/pipeline.svg" alt="" class="w-7 h-7" />
-        </div>
-        <h3 class="font-semibold">Verification pipelines</h3>
-        <p class="mt-2 text-slate-300 text-sm">From specification to CI: reproducible pipelines that integrate with your workflow and keep proofs green.</p>
-      </div>
     </div>
   </div>
 </section>
-
-<section id="approach" class="py-12 bg-slate-900">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-2xl font-semibold">Our approach</h2>
-    <ol class="mt-6 text-left inline-block text-slate-300">
-      <li class="mb-2"><strong>1.</strong> Capture a precise formal specification for your system.</li>
-      <li class="mb-2"><strong>2.</strong> Design/modify a compiler that preserves the spec into verifiable IR.</li>
-      <li class="mb-2"><strong>3.</strong> Use LLMs to propose proof steps, then discharge them with automated proof-checkers.</li>
-      <li class="mb-2"><strong>4.</strong> Integrate results into CI so proofs stay green as code evolves.</li>
-    </ol>
-  </div>
-</section>
-
-<section id="about" class="py-12">
-  <div class="max-w-4xl mx-auto px-6 text-center text-slate-300">
-    <h2 class="text-2xl font-semibold">About VerifyAI</h2>
-    <p class="mt-4">VerifyAI brings together compiler theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We craft toolchains and workflows that deliver provable guarantees without slowing product velocity.</p>
-  </div>
-</section>
-
 <section id="contact" class="py-12 bg-slate-900">
   <div class="max-w-4xl mx-auto px-6 text-center text-slate-300">
     <h2 class="text-2xl font-semibold">Contact</h2>
