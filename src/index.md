@@ -41,7 +41,7 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
 <section id="about-approach" class="py-12">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex flex-col md:flex-row gap-6">
-      <div class="rounded-xl p-6 bg-slate-800 glass flex-1">
+  <div id="about" class="rounded-xl p-6 bg-slate-800 glass flex-1">
         <h3 class="text-xl font-semibold">About VerifyAI</h3>
         <p class="mt-3 text-slate-300">VerifyAI brings together compiler theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We craft toolchains and workflows that deliver provable guarantees without slowing product velocity.</p>
         <ul class="mt-4 text-slate-300 space-y-2 text-sm">
@@ -51,7 +51,7 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
         </ul>
       </div>
 
-  <div class="rounded-xl p-6 bg-slate-800 glass flex-1">
+  <div id="approach" class="rounded-xl p-6 bg-slate-800 glass flex-1">
         <h3 class="text-xl font-semibold">Our approach</h3>
         <div class="mt-3 text-slate-300 text-sm">
           <ol class="list-decimal list-inside space-y-2">
