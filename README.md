@@ -68,3 +68,9 @@ Next steps I can take for you
 - Add a GitHub Actions workflow to publish automatically.
 - Convert the site to a Markdown-driven static site (eleventy, Hugo, or Next.js) for easier content editing.
 - Add analytics, a blog, or case-study pages.
+
+Vercel notes
+
+If you're deploying this project to Vercel and see the error "No Output Directory named 'dist' found after the Build completed", configure Vercel to use the Eleventy output directory (`_site`). I added a `vercel.json` file that configures Vercel's `@vercel/static-build` to use `_site` as the `distDir`. With this file in the repo, Vercel will run `npm run build` and deploy `_site` automatically.
+
+If you'd rather set this in the Vercel dashboard instead of using `vercel.json`, in your project settings set the Build Command to `npm run build` and the Output Directory to `_site`.
