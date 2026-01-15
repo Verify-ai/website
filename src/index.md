@@ -19,19 +19,15 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
           <div class="text-white font-semibold">Safety-critical</div>
           <div>Systems with provable guarantees</div>
         </div>
-        <div>
-          <div class="text-white font-semibold">Crypto & Finance</div>
-          <div>Auditable and verifiable code</div>
-        </div>
       </div>
     </div>
     <div>
       <div class="bg-slate-800 rounded-2xl p-6 glass shadow-xl">
         <h3 class="text-lg font-semibold">What we deliver</h3>
         <ul class="mt-3 text-slate-300 space-y-2">
-          <li>Custom compiler toolchains that emit verifiable IR</li>
-          <li>LLM-augmented proof generation backed by proof-checkers</li>
-          <li>Reproducible CI pipelines for maintaining proofs</li>
+          <li>Custom compiler toolchains that translate Python code into Dafny code</li>
+          <li>LLM-augmented proof generation</li>
+          <li>CLI and dashboard to monitor your code</li>
         </ul>
       </div>
     </div>
@@ -43,11 +39,10 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
     <div class="flex flex-col md:flex-row gap-6">
   <div id="about" class="rounded-xl p-6 bg-slate-800 glass flex-1">
         <h3 class="text-xl font-semibold">About VerifyAI</h3>
-        <p class="mt-3 text-slate-300">VerifyAI brings together compiler theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We craft toolchains and workflows that deliver provable guarantees without slowing product velocity.</p>
+        <p class="mt-3 text-slate-300">VerifyAI brings together programming language theory, formal methods, and the latest LLM techniques to make formal verification practical for real-world codebases. We craft toolchains and workflows that deliver provable guarantees without slowing product velocity.</p>
         <ul class="mt-4 text-slate-300 space-y-2 text-sm">
           <li>Compiler engineering tailored to verifiability</li>
           <li>LLM-assisted proof strategies with automated checking</li>
-          <li>Reproducible CI pipelines to keep proofs current</li>
         </ul>
       </div>
 
@@ -55,10 +50,9 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
         <h3 class="text-xl font-semibold">Our approach</h3>
         <div class="mt-3 text-slate-300 text-sm">
           <ol class="list-decimal list-inside space-y-2">
-            <li><strong>Specify:</strong> Capture a precise formal specification for the system.</li>
-            <li><strong>Preserve:</strong> Design/modify a compiler that preserves semantics into verifiable IR.</li>
-            <li><strong>Propose:</strong> Use LLMs to propose proof steps and structure proof candidates.</li>
-            <li><strong>Discharge:</strong> Discharge proofs with automated proof-checkers and integrate into CI.</li>
+            <li><strong>Compile Python Code in Dafny Code:</strong> Convert commonly used programming languages into programming languages that can be verified</li>
+            <li><strong>Use LLMs to Add Annotations:</strong> Use finetuned LLMs to add annotations to the Dafny code</li>
+            <li><strong>Use Dafny Methods to Verify Code:</strong> Dafny verifies your code</li>
           </ol>
         </div>
       </div>
@@ -68,21 +62,21 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
 
 <section id="services" class="py-12">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold">Services</h2>
+    <h2 class="text-2xl font-semibold">Products</h2>
     <div class="mt-6 grid md:grid-cols-2 gap-6">
       <div class="rounded-xl p-6 bg-slate-800 glass">
         <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
           <img src="/assets/icons/compiler.svg" alt="" class="w-7 h-7" />
         </div>
-        <h3 class="font-semibold">Compiler engineering</h3>
-        <p class="mt-2 text-slate-300 text-sm">We design compilers that preserve semantics and emit verification-friendly IR for downstream proof tools.</p>
+        <h3 class="font-semibold">Compilers</h3>
+        <p class="mt-2 text-slate-300 text-sm">We design compilers that converts a subset of typed Python into the verification-aware Dafny language.</p>
       </div>
       <div class="rounded-xl p-6 bg-slate-800 glass">
         <div class="w-12 h-12 mb-3 bg-gradient-to-br from-emerald-300 to-sky-400 rounded-lg flex items-center justify-center">
           <img src="/assets/icons/specs.svg" alt="" class="w-7 h-7" />
         </div>
-        <h3 class="font-semibold">Formal specs &amp; models</h3>
-        <p class="mt-2 text-slate-300 text-sm">We help write precise formal specifications and abstract models that make verification tractable and auditable.</p>
+        <h3 class="font-semibold">Finetuned LLMs</h3>
+        <p class="mt-2 text-slate-300 text-sm">We work on cutting-edge AI models to help write verification constraints.</p>
       </div>
     </div>
   </div>
@@ -90,7 +84,7 @@ title: VerifyAI — Formal verification with custom compilers & LLMs
 <section id="contact" class="py-12 bg-slate-900">
   <div class="max-w-4xl mx-auto px-6 text-center text-slate-300">
     <h2 class="text-2xl font-semibold">Contact</h2>
-    <p class="mt-4">Interested in a pilot or technical discussion? Email us at <a class="text-emerald-300" href="mailto:hello@verify.ai">hello@verify.ai</a>.</p>
-    <div class="mt-6"><a href="mailto:hello@verify.ai" class="inline-block bg-emerald-300 text-emerald-900 px-6 py-3 rounded-md font-semibold">Email us</a></div>
+    <p class="mt-4">Interested in a pilot or technical discussion? Contact us <a class="text-emerald-300" href="https://forms.gle/kTJpJYmXmwVB56z9A">here</a>.</p>
+    <!-- <div class="mt-6"><a href="mailto:hello@verify.ai" class="inline-block bg-emerald-300 text-emerald-900 px-6 py-3 rounded-md font-semibold">Email us</a></div> -->
   </div>
 </section>
